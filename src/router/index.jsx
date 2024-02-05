@@ -1,11 +1,11 @@
 import { createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom'
 import { Home, Kardex, Login, NotFound, Schedule } from '../pages'
-import App from '../App'
+import { Layout } from '../layout'
 
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<App />}>
+    <Route path='/' element={<Layout />}>
       <Route path='/' index element={<Home />} />
       <Route path='kardex' element={<Kardex />} />
       <Route path='schedule' element={<Schedule />} />
