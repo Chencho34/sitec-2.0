@@ -8,6 +8,7 @@ export default function Login() {
 
   return (
     <section className='w-full h-screen flex items-center justify-between '>
+      
       <article className='bg-[#212121] h-full w-2/5 flex items-center justify-center '>
         {/* <img
           src='https://images.unsplash.com/photo-1606761568499-6d2451b23c66?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
@@ -19,8 +20,39 @@ export default function Login() {
           <p className='text-md font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cupiditate soluta vero a aperiam quo molestiae. Odit, dolor ullam praesentium, reprehenderit placeat nulla doloremque eligendi ipsum quos nesciunt, inventore ipsa in quibusdam.</p>
         </section>
       </article>
-      <article className='bg-[202020] bg-slate-200 h-full w-3/5 flex items-center justify-center flex-col'>
-        {/* <h1 className='text-6xl text-[#212121] font-bold mb-11'>Welcome to Sitec 2.0</h1> */}
+      <article className='contact__wrapper'>
+        <form >
+          <h1 className='contact__title'>Login</h1>
+          <label className='form__label'>
+            <input
+              type='email'
+              placeholder='Email'
+              name='email'
+           
+            />
+            <i className='bx bxs-envelope' />
+          </label>
+          <label className='form__label'>
+            <input
+              type='password'
+              placeholder='Password'
+              name='password'
+            />
+            <i className='bx bxs-lock-alt' />
+          </label>
+          <div className='form__remember-forgot'>
+            <a href='#'>Forgot password?</a>
+          </div>
+          <button 
+            className='form__btn' 
+            type='submit'
+          >
+            Login
+          </button>
+        </form>
+      </article>
+      {/* <article className='bg-[202020] bg-slate-200 h-full w-3/5 flex items-center justify-center flex-col'>
+        <h1 className='text-6xl text-[#212121] font-bold mb-11'>Welcome to Sitec 2.0</h1>
         <div className='bg-white rounded-lg shadow-lg p-8 w-full max-w-md'>
           <h2 className='text-4xl font-bold text-center mb-4 text-[#212121]'>Login</h2>
           <form className='space-y-4'>
@@ -73,6 +105,7 @@ export default function Login() {
           </form>
         </div>
       </article>
+       */}
     </section>
   )
 }
