@@ -10,15 +10,10 @@ export default function Login() {
 
   return (
     <section className='w-full h-screen flex items-center justify-between '>
-      <article className='bg-[#212121] h-full w-2/5 flex items-center justify-center '>
-        <img
-          src='https://images.unsplash.com/photo-1606761568499-6d2451b23c66?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-          alt='img'
-          className='object-cover h-full'
-        />
-        {/* <section className='text-slate-200 px-8 flex flex-col justify-end pb-10 h-full gap-8 '>
-          <h1 className='text-6xl font-normal'>
-            Welcome to my new sitec 2.0!!
+      <article className='hidden md:flex relative  h-full w-2/5 items-center justify-center bg-cover bg-center bg-no-repeat ' style={{backgroundImage: 'url(https://images.unsplash.com/photo-1606761568499-6d2451b23c66?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)'}}>
+        <section className='text-slate-200 px-8 flex flex-col justify-end pb-10 h-full gap-8 absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-t from-[rgb(33,33,33,.9)] to-[rgb(33,33,33,.5)] bg-transparent'>
+          <h1 className='text-5xl font-bold'>
+            Welcome To My New Sitec 2.0!!
           </h1>
           <p className='text-md font-light'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
@@ -26,9 +21,9 @@ export default function Login() {
             praesentium, reprehenderit placeat nulla doloremque eligendi ipsum
             quos nesciunt, inventore ipsa in quibusdam.
           </p>
-        </section> */}
+        </section>
       </article>
-      <article className='bg-slate-20 bg-[#26418f] h-full w-3/5 flex items-center justify-center flex-col'>
+      <article className='w-full bg-slate-200 h-full md:w-3/5 flex items-center justify-center flex-col relative'>
         <form className='flex flex-col gap-6 bg-white rounded-lg shadow-lg p-8 w-full max-w-xs'>
           <h2 className='text-4xl font-bold text-center mb-4 text-[#212121]'>
             Login
